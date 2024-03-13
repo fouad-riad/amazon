@@ -10,8 +10,8 @@ import { PRODOTTI } from './data/prodotti';
 export class AppComponent {
   title = 'amazon';
   ratingTrustPilot:Rating={
-    rate:799,
-    count:4.9
+    rate:4.9,
+    count:799
   }
   prodottoDelMese:Prodotto = PRODOTTI[3]
 }
