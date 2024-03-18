@@ -1,4 +1,11 @@
 <div class="btn-group" *ngIf="categorie.length > 0">
-    <button type="button" *ngFor="let c of categorie" class="btn btn-outline-primary">{{c}}</button>
+  <button
+    type="button"
+    *ngFor="let c of categorie"
+    class="btn btn-outline-primary"
+    [routerLink]="['/prodotti', 'categoria', c]"
+  >
+    {{ c }}
+  </button>
 </div>
 <app-spinner *ngIf="categorie.length == 0" tipo="text-danger"></app-spinner>

@@ -11,6 +11,9 @@ import { ProdottiOffertaComponent } from './components/prodotti-offerta/prodotti
 import { HttpClientModule } from '@angular/common/http';
 import { CategorieComponent } from './components/categorie/categorie.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { ContattiComponent } from './components/contatti/contatti.component';
+import { ProdottiDetailComponent } from './components/prodotti-detail/prodotti-detail.component';
+import { ProdottiCategoriaComponent } from './components/prodotti-categoria/prodotti-categoria.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     RatingComponent,
     ProdottiOffertaComponent,
     CategorieComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ContattiComponent,
+    ProdottiDetailComponent,
+    ProdottiCategoriaComponent
   ],
   imports: [
     BrowserModule,
