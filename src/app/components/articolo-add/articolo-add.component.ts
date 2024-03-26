@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { ArticoloAddDTO } from '../../models/articolo';
 import { BlogService } from '../../services/blog.service';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> d02c38cba57e1e9a0ef3c39077feca9b01209ab3
 
 @Component({
   selector: 'app-articolo-add',
@@ -10,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class ArticoloAddComponent {
 model:ArticoloAddDTO = new ArticoloAddDTO()
+<<<<<<< HEAD
 constructor(private blogService: BlogService ,private router:Router){
   
 }
@@ -20,6 +24,9 @@ aggiungiArticolo(){
   //naviga alla lista degli articoli
   this.router.navigate(["/blog"])
   })
+=======
+constructor(private blogService: BlogService){
+>>>>>>> d02c38cba57e1e9a0ef3c39077feca9b01209ab3
   
 }
 }

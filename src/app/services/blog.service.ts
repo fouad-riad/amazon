@@ -20,9 +20,11 @@ private serverBaseUrl = "http://localhost:3000"
   addArticolo(articolo:ArticoloAddDTO):Observable<Articolo>{
     return this.http.post<Articolo>(this.serverBaseUrl + "/articoli", articolo) 
   }
+
 deleteArticoloById(id:number): Observable<any>{
   return this.http.delete(this.serverBaseUrl + "/articoli/"+id)
 }
+
 
 
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Nuovo Articolo</h1>
 <hr />
 <form (ngSubmit)="aggiungiArticolo()" #laForm="ngForm">
@@ -60,3 +61,30 @@
 <!-- <pre
   >{{ model | json }}
 </pre> -->
+=======
+<h1>nuovo articolo</h1>
+<hr />
+<form>
+  <div class="mb-3">
+    <label for="title" class="form-label">titolo</label>
+    <input
+    [(ngModel)]="model.title"
+      type="text"
+      class="form-control"
+      id="title"
+      name="title"
+      placeholder="titolo....."
+    />
+  </div>
+  <div class="mb-3">
+    <label for="text" class="form-label">testo</label>
+    <textarea [(ngModel)]="model.text" class="form-control" id="text"  name="text" rows="3"></textarea>
+  </div>
+  <div class="form-check mb-3">
+    <input [(ngModel)]="model.published" class="form-check-input" type="checkbox" name="published"  id="published" />
+    <label class="form-check-label" for="published"> publicato </label>
+  </div>
+  <button type="submit" class="btn btn-primary">salva</button>
+</form>
+{{model | json}}
+>>>>>>> d02c38cba57e1e9a0ef3c39077feca9b01209ab3
