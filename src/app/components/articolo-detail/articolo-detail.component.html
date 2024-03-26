@@ -1,0 +1,9 @@
+<div *ngIf="articolo">
+    <h1 class="display-3">{{articolo.title}}</h1>
+    <p>{{articolo.text}}</p>
+    <hr>
+    <div class="d-flex gap-3">
+    <a class="btn btn-secondary" [routerLink]="['/blog']">ritorna al blog</a>
+    <button type="button" class="btn btn-danger" (click)="rimuovi()">rimuovi articolo</button>
+</div>
+</div>
